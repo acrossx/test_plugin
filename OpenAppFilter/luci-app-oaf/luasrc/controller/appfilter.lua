@@ -9,28 +9,28 @@ function index()
 	
 	local page
 	--hide save button
-	page = entry({"admin", "control", "appfilter"}, arcombine(cbi("appfilter/appfilter"), cbi("appfilter/dev_status", {hideapplybtn=true, hidesavebtn=true, hideresetbtn=true})), _("appfilter"), 100)
+	page = entry({"admin", "network", "appfilter"}, arcombine(cbi("appfilter/appfilter"), cbi("appfilter/dev_status", {hideapplybtn=true, hidesavebtn=true, hideresetbtn=true})), _("appfilter"), 100)
 
 	page.leaf   = true
 	page.subindex = true
 
 	--page.dependent = true
 	
-	page = entry({"admin", "control", "user_status"}, call("user_status"), nil)
+	page = entry({"admin", "network", "user_status"}, call("user_status"), nil)
 	page.leaf = true
 
-	page = entry({"admin", "control", "dev_app_status"}, call("dev_app_status"), nil)
+	page = entry({"admin", "network", "dev_app_status"}, call("dev_app_status"), nil)
 	page.leaf = true
 
-	page = entry({"admin", "control", "dev_visit_list"}, call("get_dev_visit_list"), nil)
+	page = entry({"admin", "network", "dev_visit_list"}, call("get_dev_visit_list"), nil)
 	page.leaf = true
 
-	page = entry({"admin", "control", "feature_upgrade"}, call("handle_feature_upgrade"), nil)
+	page = entry({"admin", "network", "feature_upgrade"}, call("handle_feature_upgrade"), nil)
 	page.leaf = true
 
-	page = entry({"admin", "control", "dev_visit_time"}, call("get_dev_visit_time"), nil)
+	page = entry({"admin", "network", "dev_visit_time"}, call("get_dev_visit_time"), nil)
 	page.leaf = true
-	page = entry({"admin", "control", "app_class_visit_time"}, call("get_app_class_visit_time"), nil)
+	page = entry({"admin", "network", "app_class_visit_time"}, call("get_app_class_visit_time"), nil)
 	page.leaf = true
 end
 
