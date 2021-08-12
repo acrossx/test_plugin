@@ -1,4 +1,4 @@
-msgid "Internet Access Schedule Control"
+msgid "Internet Access"
 msgstr "上网时间控制"
 
 msgid "Access Schedule Control Settins"
